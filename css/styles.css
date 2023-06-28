@@ -1,0 +1,223 @@
+/*inicio*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(240, 215, 237, 0.255);
+}
+
+header {
+  background-color: rgba(240, 215, 237, 0.255);
+  width: 100%;
+}
+
+h1 {
+  color: rgb(1, 1, 2);
+  text-align: center;
+  margin: 10px;
+  font-style: italic;
+}
+.logo {
+  width: 350px;
+  height: 200px;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.textoImagen {
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.img__playa {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.descripcion {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+aside {
+  margin: 25px;
+}
+
+.lugares {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+/*----footer----*/
+footer {
+  background-color: darkslategrey;
+}
+.logoFooter {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.wh {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.mail {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.instagram {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+h5 {
+  text-align: right;
+  margin: 10px;
+}
+
+/*----MEDIA QUERY INDEX */
+/*----Mobile---*/
+
+@media (max-width: 420px) {
+  h1 {
+    display: none;
+  }
+  .navegacion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lugares {
+    display: none;
+  }
+  .descripcion {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+/*---tablet---*/
+
+@media (max-width: 768px) 
+{
+h1 {
+  display: none;
+}
+.navegacion {
+ 
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 217, 61);
+  margin: 0;
+}
+
+.descripcion {
+  font-size: 1rem;
+  width: 100%;
+}
+}
+
+/*---PC---*/
+
+@media (max-width: 1200px) {
+  .contenedor {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*----HABITACIONES----*/
+.titulo__suite {
+  display: flex;
+  justify-content: center;
+
+  font-size: 3rem;
+}
+
+.titulo__suite__habitacion {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.suite__vista_al_mar {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: repeat(2 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.imagen__habitacion1 {
+  grid-column: 1;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen__habitacion2 {
+  grid-column: 2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+.imagen__habitacion3 {
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+}
+.descripcion__suite1 {
+  grid-column: 3;
+  grid-row: 1/3;
+  font-size: 1.2rem;
+  margin: 15px;
+  align-items: center;
+}
+/*div ul li {
+}*/
+p {
+  padding: 20px;
+}

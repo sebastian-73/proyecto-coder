@@ -209,12 +209,13 @@ h1 {
   width: 100%;
   height: 100%;
 }
-.descripcion__suite1 {
+.descripcion__suite {
   grid-column: 3;
   grid-row: 1/3;
   font-size: 1.2rem;
   margin: 15px;
   align-items: center;
+
 }
 /*div ul li {
 }*/

@@ -33,13 +33,40 @@
       <h1>GALERIA</h1>
 
       <section>
-        <article>
-          <h3>Imagenes de exteriores</h3>
-          <img src="../img/exteriores1.jpg" alt="zona de sillones" />
-          <img src="../img/exterior2.jpg" alt="piscina y playa" />
-          <img src="../img/exteriores 3.jpeg" alt="panoramica hotel piscina" />
-          <img src="../img/exteriores 4.jpeg" alt="piscina" />
-          <img src="../img/exteriores5.jpeg" alt="piscina 2">
+
+        <h3>Imagenes de exteriores</h3>
+
+        <article class="article__carrousel">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/exteriores1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/exterior2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/exteriores 3.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/exteriores 4.jpeg " class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/exteriores5.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -86,5 +113,8 @@
       </div>
       <h5>Copiright 2023c</h5>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
   </body>
 </html>

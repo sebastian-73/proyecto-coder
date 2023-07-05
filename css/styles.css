@@ -4,8 +4,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
 body {
-  background-color: rgba(240, 215, 237, 0.255);
+  background-color: #eddeba89;
 }
 
 header {
@@ -19,9 +20,11 @@ h1 {
   margin: 10px;
   font-style: italic;
 }
+
 .logo {
-  width: 350px;
-  height: 200px;
+  width: 300px;
+  height: 220px;
+  
 }
 
 .navegacion {
@@ -30,6 +33,7 @@ h1 {
   align-items: center;
   margin: 20px;
 }
+
 a {
   color: black;
   text-decoration: none;
@@ -79,34 +83,46 @@ aside {
 
 /*----footer----*/
 footer {
-  background-color: darkslategrey;
+  background-color: rgb(200, 207, 207);
+
 }
+
 .logoFooter {
   width: 30px;
-  height: 30px;
+  height: 25px;
   margin: 10px;
 }
+
 .wh {
   display: flex;
   margin: 10px;
   gap: 10px;
   align-items: center;
+
 }
+
 .mail {
   display: flex;
   margin: 10px;
   gap: 10px;
   align-items: center;
 }
+
 .instagram {
   display: flex;
   margin: 10px;
   gap: 10px;
   align-items: center;
 }
+
+h4 {
+  font-size: 1rem;
+}
+
 h5 {
   text-align: right;
   margin: 10px;
+  font-size: .9rem;
 }
 
 /*----MEDIA QUERY INDEX */
@@ -116,20 +132,32 @@ h5 {
   h1 {
     display: none;
   }
+
   .navegacion {
     display: flex;
     flex-direction: column;
   }
 
+  .logo {
+    align-items: center;
+    padding: 10px;
+  }
+
   .link {
     display: flex;
     flex-direction: column;
-    font-weight: 700;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
   }
+
+
 
   .lugares {
     display: none;
   }
+
   .descripcion {
     display: none;
   }
@@ -141,6 +169,12 @@ h5 {
   h1 {
     display: none;
   }
+
+  .logo {
+    align-items: center;
+    padding: 10px;
+  }
+
   .navegacion {
     display: flex;
     flex-direction: column;
@@ -168,9 +202,10 @@ h5 {
 .titulo__suite {
   display: flex;
   justify-content: center;
-
   font-size: 3rem;
 }
+
+
 
 .titulo__suite__habitacion {
   padding: 20px;
@@ -202,11 +237,13 @@ h5 {
   width: 100%;
   height: 100%;
 }
+
 .imagen__habitacion3 {
   grid-column: 2;
   width: 100%;
   height: 100%;
 }
+
 .descripcion__suite {
   grid-column: 3;
   grid-row: 1/3;
@@ -215,9 +252,11 @@ h5 {
   align-items: center;
 }
 
-p {
+.descripcion__suite__parrafo {
   padding: 20px;
+  font-weight: 500;
 }
+
 /*------media query habitaciones------ */
 
 /*mobile*/
@@ -225,18 +264,21 @@ p {
   .titulo__suite {
     display: none;
   }
+
   .titulo__suite__habitacion {
     text-align: center;
     font-size: 25px;
   }
+
   .suite__vista_al_mar {
     display: flex;
     flex-direction: column;
   }
 
-  p {
+  .descripcion__suite__parrafo {
     display: none;
   }
+
 }
 
 /*-----tablet-----*/
@@ -245,6 +287,7 @@ p {
     text-align: center;
     font-size: 25px;
   }
+
   .suite__vista_al_mar {
     display: flex;
     flex-direction: column;
@@ -263,16 +306,39 @@ p {
 
 /*-----IMAGENES----*/
 
+/*--exteriores--*/
+h1 {
+  text-decoration-line: underline;
+
+}
+
+.titulo__galeria {
+  text-align: center;
+  padding: 10px;
+}
+
 .carousel-inner img {
   width: 100%;
   height: 100%;
 }
 
 #carouselExampleFade {
-  width: 60%;
+  width: 50%;
 }
+
 .article__carrousel {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.descripcion__galeria {
+  margin: 10px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+/*---interior---*/
+
+#carouselExampleFade1 {
+  width: 50%;
 }

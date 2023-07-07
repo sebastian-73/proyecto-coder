@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>Reservas</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Reservas</title>
+</head>
+
+<body>
+  <header>
+    <h1>TU LUGAR DE DESCANSO</h1>
+
+    <div class="navegacion">
+      <a href="../index.html">
+        <img class="logo" src="../img/hotel_logo maratol.png" alt="" /></a>
+
+      <nav>
+        <img src="img/hotel_logo maratol.png" alt="" />
+        <ul class="link">
+          <li><a href="./habitaciones.html">Habitaciones</a></li>
+          <li><a href="../page/imagenes.html">Imagenes</a></li>
+          <li><a href="../page/reservas.html">Reservas</a></li>
+          <li><a href="../page/nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+
+
   <body>
-    <header>
-      <h1>TU LUGAR DE DESCANSO</h1>
+    <h1>Formulario de Reservas</h1>
+    <h2 class="reserva__checkin"> Instrucciones especiales para hacer check-in</h2>
+    <p class="reserva__checkin__descripcion">
+      La recepción está abierta todos los días, de 08:00 a 21:00.
+      Los huéspedes deben contactar al hospedaje con anticipación para recibir las instrucciones sobre el check-in. El
+      personal de recepción los recibirá al momento de su llegada. <br>
+      Comunícate con la propiedad, como mínimo, 24 horas antes de la llegada para organizar el check-in. Utiliza la
+      información incluida en la confirmación de la reservación. <br>
+      Si tienes previsto llegar después de las 21:00, comunícate con la propiedad con anticipación. <br>
+      Utiliza la información incluida en la confirmación de la reservación.
+    </p>
 
-      <div class="navegacion">
-        <a href="../index.html">
-          <img class="logo" src="../img/hotel_logo maratol.png" alt=""
-        /></a>
+    <form class="formulario" action="procesar_reserva.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-        <nav>
-          <img src="img/hotel_logo maratol.png" alt="" />
-          <ul class="link">
-            <li><a href="./habitaciones.html">Habitaciones</a></li>
-            <li><a href="../page/imagenes.html">Imagenes</a></li>
-            <li><a href="../page/reservas.html">Reservas</a></li>
-            <li><a href="../page/nosotros.html">Nosotros</a></li>
-          </ul>
-        </nav>
-      </div>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
 
-    </header>
-  
+      <label for="fecha">Fecha de reserva:</label>
+      <input type="date" id="fecha" name="fecha" required>
 
-    <h1>Reservas</h1>
-    <main>
-      <div>
-        <form action="">
-          <input type=" text" placeholder="ingreso" />
-          <input type="text" placeholder="salida" />
-        </form>
-        <form action="">
-          <input type="number" placeholder="Huespedes" />
-          <input type="number" placeholder="Habitaciones" />
-        </form>
-      </div>
-    </main>
-    <hr>
-        
+      <label for="cantidad">Cantidad de personas:</label>
+      <input type="number" id="cantidad" name="cantidad" required>
 
-    <footer>
-      <div class="wh">
-        <img class="logoFooter" src="../img/logo whats.png" alt="" />
-        <h4>Contacto: 2615887755</h4>
-      </div>
-      <div class="mail">
-        <img class="logoFooter" src="../img/logo email.jpeg" alt="" />
-        <h4>Email: saviettosebstian@gmail.com</h4>
-      </div>
-      <div class="instagram">
-        <img class="logoFooter" src="../img/logo instagram.jpeg" alt="" />
-        <h4>Instagram</h4>
-      </div>
-      <h5>Copiright 2023c</h5>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  
+      <label for="habitaciones">Cantidad de habitaciones:</label>
+      <input type="number" id="habitaciones" name="habitacion" required>
+
+      <input type="submit" value="Enviar reserva">
+    </form>
+
   </body>
+
+</html>
+
+
+<footer>
+  <div class="wh">
+    <img class="logoFooter" src="../img/logo whats.png" alt="" />
+    <h4>Contacto: 2615887755</h4>
+  </div>
+  <div class="mail">
+    <img class="logoFooter" src="../img/logo email.jpeg" alt="" />
+    <h4>Email: saviettosebstian@gmail.com</h4>
+  </div>
+  <div class="instagram">
+    <img class="logoFooter" src="../img/logo instagram.jpeg" alt="" />
+    <h4>Instagram</h4>
+  </div>
+  <h5>Copiright 2023c</h5>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+
 </html>

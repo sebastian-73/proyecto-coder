@@ -1,0 +1,104 @@
+.titulo__suite {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+
+
+.titulo__suite__habitacion {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.suite__vista_al_mar {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    grid-template-rows: repeat(2 1fr);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+}
+
+.imagen__habitacion1 {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen__habitacion2 {
+    grid-column: 2;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen__habitacion3 {
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion__suite {
+    grid-column: 3;
+    grid-row: 1/3;
+    font-size: 1.2rem;
+    margin: 15px;
+    align-items: center;
+}
+
+.descripcion__suite__parrafo {
+    padding: 20px;
+    font-weight: 500;
+}
+
+/*------media query habitaciones------ */
+
+/*mobile*/
+@media (max-width: 420px) {
+    .titulo__suite {
+        display: none;
+    }
+
+    .titulo__suite__habitacion {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .suite__vista_al_mar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descripcion__suite__parrafo {
+        display: none;
+    }
+
+}
+
+/*-----tablet-----*/
+@media (max-width: 768px) {
+    .titulo__suite__habitacion {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .suite__vista_al_mar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*---- PC----*/
+
+@media (max-width: 1200px) {
+    .contenedor {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

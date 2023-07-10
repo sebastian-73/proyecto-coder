@@ -1,0 +1,42 @@
+footer {
+    background-color: rgb(200, 207, 207);
+
+}
+
+.logoFooter {
+    width: 30px;
+    height: 25px;
+    margin: 10px;
+}
+
+.wh {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.mail {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.instagram {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    text-align: right;
+    margin: 10px;
+    font-size: .9rem;
+}

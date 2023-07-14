@@ -1,11 +1,11 @@
-body {
-    $body-bg: #e4ddcb89;
-}
-
 header {
-    $header-bg: #f0d7ed41;
+    background-color: #ececdd;
     width: 100%;
 }
+body {
+    background-color: #f2f2f2;
+}
+
 
 
 .logo {
@@ -19,13 +19,15 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin: 20px;
-}
+    }
+
 
 a {
     color: black;
     text-decoration: none;
     font-size: 1.5rem;
-}
+    }
+
 
 .link {
     display: flex;
@@ -35,6 +37,7 @@ a {
 nav ul li {
     margin: 10px;
     list-style-type: none;
+    
 }
 
 .textoImagen {
@@ -46,6 +49,9 @@ nav ul li {
     display: block;
     width: 100%;
     border-radius: 10px;
+    & {
+        padding: 10px;
+    }
 }
 
 .descripcion {
@@ -70,7 +76,7 @@ aside {
 
 /*----footer----*/
 footer {
-    $footer-col: #c8cfcf;
+    background-color: #beb5f2;
 
 
 }

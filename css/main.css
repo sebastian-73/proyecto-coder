@@ -120,7 +120,7 @@ a {
   font-size: 1.5rem;
 }
 
-.link {
+.menu-list {
   display: flex;
   justify-content: space-between;
 }
@@ -212,13 +212,13 @@ h5 {
   .titulo__principal {
     display: none;
   }
-  .navegacion {
-    display: flex;
-    flex-direction: column;
-  }
   .logo {
     align-items: center;
     padding: 10px;
+  }
+  .navegacion {
+    display: flex;
+    flex-direction: column;
   }
   .link {
     display: flex;
@@ -340,6 +340,12 @@ h5 {
     display: flex;
     flex-direction: column;
   }
+  .imagen__habitacion2:hover {
+    transform: none;
+  }
+  .imagen__habitacion3:hover {
+    transform: none;
+  }
   .descripcion__suite__parrafo {
     display: none;
   }
@@ -353,6 +359,12 @@ h5 {
   .suite__vista_al_mar {
     display: flex;
     flex-direction: column;
+  }
+  .imagen__habitacion2:hover {
+    transform: none;
+  }
+  .imagen__habitacion3:hover {
+    transform: none;
   }
 }
 /*---- PC----*/
@@ -386,7 +398,7 @@ h5 {
 
 .descripcion__galeria {
   margin: 10px;
-  padding: 10px;
+  padding: 25px 10px;
   font-weight: 500;
   font-size: 1.2rem;
 }

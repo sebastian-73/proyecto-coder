@@ -1,9 +1,9 @@
 header {
-    background-color: #ececdd;
+    background-color: $header-bg;
     width: 100%;
 }
 body {
-    background-color: #f2f2f2;
+    background-color: $body-bg;
 }
 
 
@@ -29,7 +29,7 @@ a {
     }
 
 
-.link {
+.menu-list {
     display: flex;
     justify-content: space-between;
 }
@@ -76,7 +76,7 @@ aside {
 
 /*----footer----*/
 footer {
-    background-color: #beb5f2;
+    background-color: $footer-col;
 
 
 }
@@ -127,15 +127,17 @@ h5 {
         display: none;
     }
 
+    .logo {
+        align-items: center;
+        padding: 10px;
+    }
+      
+
     .navegacion {
         display: flex;
         flex-direction: column;
     }
 
-    .logo {
-        align-items: center;
-        padding: 10px;
-    }
 
     .link {
         display: flex;

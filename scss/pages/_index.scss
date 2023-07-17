@@ -28,11 +28,11 @@ a {
     font-size: 1.5rem;
     }
 
+    .menu__list {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.menu-list {
-    display: flex;
-    justify-content: space-between;
-}
 
 nav ul li {
     margin: 10px;
@@ -68,10 +68,16 @@ aside {
 }
 
 .lugares {
+    padding: 20px;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+
+    &__lista {
+        font-size: 1.2rem;
+        font-weight: $intensidad-letra;
+    }
 }
 
 /*----footer----*/
@@ -139,19 +145,24 @@ h5 {
     }
 
 
-    .link {
+    .menu__list{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0px;
         padding: 0px;
-        font-weight: 500;
+        font-weight: $intensidad-letra;
     }
 
-
+   
 
     .lugares {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        &__lista {
+            font-size: .9rem;
+            align-items:center;
+        }
     }
 
     .descripcion {

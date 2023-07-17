@@ -141,7 +141,7 @@ nav ul li {
   border-radius: 10px;
 }
 .img__playa {
-  padding: 10px;
+  padding: 5px;
 }
 
 .descripcion {
@@ -262,7 +262,7 @@ h5 {
   }
   .descripcion {
     font-size: 1rem;
-    width: 100%;
+    width: 90%;
   }
 }
 /*---PC---*/
@@ -339,9 +339,6 @@ h5 {
 /*------media query habitaciones------ */
 /*mobile*/
 @media (max-width: 420px) {
-  .titulo__suite {
-    display: none;
-  }
   .titulo__suite__habitacion {
     text-align: center;
     font-size: 25px;
@@ -592,14 +589,14 @@ input[type=submit]:hover {
   .article1__imagen2 {
     display: none;
   }
-  .article1__parrafo1 {
+  .article1__parrafo2 {
     display: none;
   }
   .article2__imagen {
     display: none;
   }
-  .article__parrafo2 {
-    display: none;
+  .article2__imagen__parrafo {
+    margin: 10px;
   }
 }
 @media (max-width: 768px) {

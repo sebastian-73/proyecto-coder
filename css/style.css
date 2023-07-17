@@ -592,15 +592,13 @@ input[type=submit]:hover {
   .article1__imagen2 {
     display: none;
   }
-  .article1__parrafo1 {
+  .article1__parrafo2 {
     display: none;
   }
   .article2__imagen {
     display: none;
   }
-  .article__parrafo2 {
-    display: none;
-  }
+  
 }
 @media (max-width: 768px) {
   .article1 {

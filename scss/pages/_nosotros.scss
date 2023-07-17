@@ -83,18 +83,21 @@
             display: none;
         }
 
-        &__parrafo1 {
+        &__parrafo2 {
             display: none;
+        }
+
+
+    }
+
+    
+    .article2__imagen {
+        display: none;
+        &__parrafo {
+            margin: 10px;
         }
     }
 
-    .article2__imagen {
-        display: none;
-    }
-
-    .article__parrafo2 {
-        display: none;
-    }
 }
 
 

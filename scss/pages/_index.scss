@@ -2,16 +2,18 @@ header {
     background-color: $header-bg;
     width: 100%;
 }
+
 body {
     background-color: $body-bg;
 }
 
-
+#titulo__principal {
+    font-size: 1.5rem;
+}
 
 .logo {
-    width: 300px;
-    height: 220px;
-
+    width: 200px;
+    height: 120px;
 }
 
 .navegacion {
@@ -19,26 +21,24 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin: 20px;
-    }
-
+}
 
 a {
     color: black;
     text-decoration: none;
-    font-size: 1.5rem;
-    }
+    font-size: 1.2rem;
+}
 
-    .menu__list {
-        display: flex;
-        justify-content: space-between;
-    }
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+}
 
-
-nav ul li {
+/*nav ul li {
     margin: 10px;
     list-style-type: none;
-    
-}
+
+}*/
 
 .textoImagen {
     position: relative;
@@ -49,17 +49,20 @@ nav ul li {
     display: block;
     width: 100%;
     border-radius: 10px;
+
     & {
         padding: 5px;
     }
 }
 
+/*----descripcion del p que esta dentro de la imagen --*/
 .descripcion {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
+    font-weight: $intensidad-letra;
     width: 90%;
 }
 
@@ -83,8 +86,6 @@ aside {
 /*----footer----*/
 footer {
     background-color: $footer-col;
-
-
 }
 
 .logoFooter {
@@ -98,7 +99,6 @@ footer {
     margin: 10px;
     gap: 10px;
     align-items: center;
-
 }
 
 .mail {
@@ -121,47 +121,44 @@ h4 {
 
 h5 {
     text-align: right;
-    margin: 10px;
-    font-size: .9rem;
+    margin: 20px;
+    font-size: 0.9rem;
 }
 
 /*----MEDIA QUERY INDEX */
 /*----Mobile---*/
 
 @media (max-width: 420px) {
-    .titulo__principal {
+    #titulo__principal {
         display: none;
     }
+
 
     .logo {
         align-items: center;
         padding: 10px;
     }
-      
 
     .navegacion {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
+
     }
 
-
-    .menu__list{
-        display: flex;
-        flex-direction: column;
+    .menu__list {
+        @include flex-column;
         align-items: center;
         margin: 0px;
         padding: 0px;
         font-weight: $intensidad-letra;
     }
 
-   
-
     .lugares {
         display: flex;
         flex-direction: column;
+
         &__lista {
-            font-size: .9rem;
-            align-items:center;
+            font-size: 0.9rem;
+            align-items: center;
         }
     }
 
@@ -173,7 +170,7 @@ h5 {
 /*---tablet---*/
 
 @media (max-width: 768px) {
-    .titulo__principal {
+    #titulo__principal {
         display: none;
     }
 

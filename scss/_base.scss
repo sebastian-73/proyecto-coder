@@ -2,8 +2,12 @@ $header-bg:  #ececdd ;
 $body-bg:    #f2f2f2;
 $footer-col:   #beb5f2;
 $intensidad-letra:  500;
+$f-size: 1rem;
 
-
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
 
 // RESETEO CSS
 * {
@@ -16,6 +20,6 @@ h1 {
     color: #010102;
     text-align: center;
     margin: 10px;
-    font-style:oblique;
-    padding: 30px;
+    font-style:normal;
+    padding: 15px;
 }

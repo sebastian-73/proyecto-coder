@@ -322,6 +322,9 @@ h2 {
     width: 80%;
     margin: 0;
   }
+  .inicio {
+    display: none;
+  }
 }
 /*---PC---*/
 @media (max-width: 1200px) {

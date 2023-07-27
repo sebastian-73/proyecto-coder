@@ -1,45 +1,6 @@
 /* Estilos generales */
 
-header {
-    background-color: $header-bg;
-    width: 100%;
-}
 
-body {
-    background-color: $body-bg;
-}
-
-#titulo__principal {
-    font-size: 1.5rem;
-}
-
-.logo {
-    width: 200px;
-    height: 120px;
-}
-
-.navegacion {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.menu__list {
-    display: flex;
-    justify-content: space-between;
-
-    & li a:hover {
-        color: #ff9800;
-    }
-}
-    
 
 .textoImagen {
     
@@ -156,7 +117,7 @@ h2 {
     }
 
     .descripcion {
-        font-size: 1rem;
+        font-size: $f-size;
         width: 80%; 
         margin: 0;
     }

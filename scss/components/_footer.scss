@@ -57,7 +57,18 @@ footer {
         color: purple;
     }
 }
-
+/* Estilos para el enlace "Ir al inicio" */
+.inicio {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    
+    &:hover {
+        color: #ff9800;
+    }
+}
 
 /*---------MEDIA QUERI MOBILE -------*/
 @media (max-width: 420px) {
@@ -83,6 +94,9 @@ footer {
         h5 {
             font-size: 0.8rem;
         }
+    }
+    .inicio {
+        display: none;
     }
 }
 

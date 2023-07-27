@@ -138,6 +138,18 @@ footer h5 {
   color: purple;
 }
 
+/* Estilos para el enlace "Ir al inicio" */
+.inicio {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  text-decoration: none;
+}
+.inicio:hover {
+  color: #ff9800;
+}
+
 /*---------MEDIA QUERI MOBILE -------*/
 @media (max-width: 420px) {
   footer {
@@ -158,6 +170,9 @@ footer h5 {
   }
   footer h5 {
     font-size: 0.8rem;
+  }
+  .inicio {
+    display: none;
   }
 }
 /*ooter {
@@ -613,7 +628,7 @@ input[type=submit]:hover {
   margin: 20px;
   text-align: center;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .Ubicacion {
@@ -645,6 +660,7 @@ input[type=submit]:hover {
   }
   .article2__imagen__parrafo {
     margin: 10px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 768px) {

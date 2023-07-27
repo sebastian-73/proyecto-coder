@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 header {
     background-color: $header-bg;
     width: 100%;
@@ -32,15 +34,15 @@ a {
 .menu__list {
     display: flex;
     justify-content: space-between;
+
+    & li a:hover {
+        color: #ff9800;
+    }
 }
-
-/*nav ul li {
-    margin: 10px;
-    list-style-type: none;
-
-}*/
+    
 
 .textoImagen {
+    
     position: relative;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -49,10 +51,8 @@ a {
     display: block;
     width: 100%;
     border-radius: 10px;
+    
 
-    & {
-        padding: 5px;
-    }
 }
 
 /*----descripcion del p que esta dentro de la imagen --*/
@@ -61,9 +61,9 @@ a {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: $intensidad-letra;
-    width: 90%;
+    width: 80%;
 }
 
 aside {
@@ -78,52 +78,15 @@ aside {
     grid-gap: 10px;
 
     &__lista {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: $intensidad-letra;
     }
 }
-
-/*----footer----*/
-footer {
-    background-color: $footer-col;
+h2 {
+    font-size: 1.5rem;
+    margin-left: 30px;
 }
 
-.logoFooter {
-    width: 30px;
-    height: 25px;
-    margin: 10px;
-}
-
-.wh {
-    display: flex;
-    margin: 10px;
-    gap: 10px;
-    align-items: center;
-}
-
-.mail {
-    display: flex;
-    margin: 10px;
-    gap: 10px;
-    align-items: center;
-}
-
-.instagram {
-    display: flex;
-    margin: 10px;
-    gap: 10px;
-    align-items: center;
-}
-
-h4 {
-    font-size: 1rem;
-}
-
-h5 {
-    text-align: right;
-    margin: 20px;
-    font-size: 0.9rem;
-}
 
 /*----MEDIA QUERY INDEX */
 /*----Mobile---*/
@@ -152,24 +115,30 @@ h5 {
         font-weight: $intensidad-letra;
     }
 
+    
     .lugares {
         display: flex;
         flex-direction: column;
-
+        
+        
         &__lista {
             font-size: 0.9rem;
             align-items: center;
         }
     }
-
+    
+    
     .descripcion {
         display: none;
     }
 }
 
+
+
+
 /*---tablet---*/
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     #titulo__principal {
         display: none;
     }
@@ -188,7 +157,8 @@ h5 {
 
     .descripcion {
         font-size: 1rem;
-        width: 90%;
+        width: 80%; 
+        margin: 0;
     }
 }
 

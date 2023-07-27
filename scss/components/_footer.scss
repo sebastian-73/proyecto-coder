@@ -1,42 +1,175 @@
+/// Estilos generales del footer
+
+
 footer {
-    background-color: rgb(200, 207, 207);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $footer-col ;
+    padding: 20px;
 
+    div {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        gap: 10px;
+
+
+
+        h4 {
+            margin: 0;
+            font-size: .9rem;
+        }
+    }
+
+    .logoFooter {
+        width: 30px;
+        height: 25px;
+        margin: 10px;
+    }
+
+    h5 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
 }
 
-.logoFooter {
-    width: 30px;
-    height: 25px;
-    margin: 10px;
-}
+// Estilos específicos para cada red social
 
 .wh {
-    display: flex;
-    margin: 10px;
-    gap: 10px;
-    align-items: center;
+    h4 {
+        color: blue;
 
+    }
 }
 
 .mail {
-    display: flex;
-    margin: 10px;
-    gap: 10px;
-    align-items: center;
+    h4 {
+        color: green;
+    }
 }
 
 .instagram {
+    h4 {
+        color: purple;
+    }
+}
+
+
+/*---------MEDIA QUERI MOBILE -------*/
+@media (max-width: 420px) {
+    footer {
+        flex-direction: column;
+
+        div {
+            margin: 5px;
+            gap: 5px;
+            text-align: center;
+
+            h4 {
+                font-size: 0.8rem;
+            }
+        }
+
+        .logoFooter {
+            width: 25px;
+            height: 20px;
+            margin: 5px;
+        }
+
+        h5 {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ooter {
     display: flex;
-    margin: 10px;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    background-color: rgb(200, 207, 207);
+    padding: 20px;
+
+    div {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        h4 {
+            margin: 0;
+        }
+    }
+
+    h5 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
-h4 {
-    font-size: 1rem;
+// Estilos específicos para cada red social
+.wh {
+    h4 {
+        color: blue;
+    }
 }
 
-h5 {
-    text-align: right;
-    margin: 10px;
-    font-size: .9rem;
+.mail {
+    h4 {
+        color: green;
+    }
 }
+
+.instagram {
+    h4 {
+        color: purple;
+    }
+}*/

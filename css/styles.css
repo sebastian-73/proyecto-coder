@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -53,46 +54,119 @@ nav ul li {
 }
 
 footer {
-  background-color: rgb(200, 207, 207);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #beb5f2;
+  padding: 20px;
 }
-
-.logoFooter {
+footer div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+footer div h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+footer .logoFooter {
   width: 30px;
   height: 25px;
   margin: 10px;
 }
-
-.wh {
-  display: flex;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-.mail {
-  display: flex;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-.instagram {
-  display: flex;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  text-align: right;
-  margin: 10px;
+footer h5 {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
   font-size: 0.9rem;
 }
 
+.wh h4 {
+  color: blue;
+}
+
+.mail h4 {
+  color: green;
+}
+
+.instagram h4 {
+  color: purple;
+}
+
+/*---------MEDIA QUERI MOBILE -------*/
+@media (max-width: 420px) {
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    margin: 5px;
+    gap: 5px;
+    text-align: center;
+  }
+  footer div h4 {
+    font-size: 0.8rem;
+  }
+  footer .logoFooter {
+    width: 25px;
+    height: 20px;
+    margin: 5px;
+  }
+  footer h5 {
+    font-size: 0.8rem;
+  }
+}
+/*ooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 207, 207);
+    padding: 20px;
+
+    div {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        h4 {
+            margin: 0;
+        }
+    }
+
+    h5 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+// Estilos específicos para cada red social
+.wh {
+    h4 {
+        color: blue;
+    }
+}
+
+.mail {
+    h4 {
+        color: green;
+    }
+}
+
+.instagram {
+    h4 {
+        color: purple;
+    }
+}*/
+/* Estilos generales */
 header {
   background-color: #ececdd;
   width: 100%;
@@ -128,12 +202,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.menu__list li a:hover {
+  color: #ff9800;
+}
 
-/*nav ul li {
-    margin: 10px;
-    list-style-type: none;
-
-}*/
 .textoImagen {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -144,9 +216,6 @@ a {
   width: 100%;
   border-radius: 10px;
 }
-.img__playa {
-  padding: 5px;
-}
 
 /*----descripcion del p que esta dentro de la imagen --*/
 .descripcion {
@@ -154,9 +223,9 @@ a {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
-  width: 90%;
+  width: 80%;
 }
 
 aside {
@@ -171,50 +240,13 @@ aside {
   grid-gap: 10px;
 }
 .lugares__lista {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
-/*----footer----*/
-footer {
-  background-color: #beb5f2;
-}
-
-.logoFooter {
-  width: 30px;
-  height: 25px;
-  margin: 10px;
-}
-
-.wh {
-  display: flex;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-.mail {
-  display: flex;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-.instagram {
-  display: flex;
-  margin: 10px;
-  gap: 10px;
-  align-items: center;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  text-align: right;
-  margin: 20px;
-  font-size: 0.9rem;
+h2 {
+  font-size: 1.5rem;
+  margin-left: 30px;
 }
 
 /*----MEDIA QUERY INDEX */
@@ -252,7 +284,7 @@ h5 {
   }
 }
 /*---tablet---*/
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   #titulo__principal {
     display: none;
   }
@@ -268,7 +300,8 @@ h5 {
   }
   .descripcion {
     font-size: 1rem;
-    width: 90%;
+    width: 80%;
+    margin: 0;
   }
 }
 /*---PC---*/

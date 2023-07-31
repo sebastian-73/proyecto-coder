@@ -3,7 +3,7 @@
 
 
 .textoImagen {
-    
+
     position: relative;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -12,7 +12,7 @@
     display: block;
     width: 100%;
     border-radius: 10px;
-    
+
 
 }
 
@@ -31,6 +31,12 @@ aside {
     margin: 25px;
 }
 
+.mobile {
+    font-size: $f-size;
+    font-weight: $intensidad-letra;
+
+}
+
 .lugares {
     padding: 20px;
     align-items: center;
@@ -43,6 +49,7 @@ aside {
         font-weight: $intensidad-letra;
     }
 }
+
 h2 {
     font-size: 1.5rem;
     margin-left: 30px;
@@ -65,6 +72,7 @@ h2 {
 
     .navegacion {
         @include flex-column;
+        background-color: rgb(241, 217, 61);
 
     }
 
@@ -76,19 +84,25 @@ h2 {
         font-weight: $intensidad-letra;
     }
 
-    
+    #mobile {
+
+        text-align: center;
+        font-size: 1rem;
+
+    }
+
     .lugares {
         display: flex;
         flex-direction: column;
-        
-        
+
+
         &__lista {
             font-size: 0.9rem;
             align-items: center;
         }
     }
-    
-    
+
+
     .descripcion {
         display: none;
     }
@@ -99,7 +113,7 @@ h2 {
 
 /*---tablet---*/
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     #titulo__principal {
         display: none;
     }
@@ -116,11 +130,16 @@ h2 {
         margin: 0;
     }
 
+    #mobile {
+        font-size: 1rem;
+    }
+
     .descripcion {
         font-size: $f-size;
-        width: 80%; 
+        width: 80%;
         margin: 0;
     }
+
     .inicio {
         display: none;
     }

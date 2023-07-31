@@ -251,6 +251,11 @@ aside {
   margin: 25px;
 }
 
+.mobile {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .lugares {
   padding: 20px;
   align-items: center;
@@ -281,6 +286,7 @@ h2 {
   .navegacion {
     display: flex;
     flex-direction: column;
+    background-color: rgb(241, 217, 61);
   }
   .menu__list {
     display: flex;
@@ -289,6 +295,10 @@ h2 {
     margin: 0px;
     padding: 0px;
     font-weight: 400;
+  }
+  #mobile {
+    text-align: center;
+    font-size: 1rem;
   }
   .lugares {
     display: flex;
@@ -303,7 +313,7 @@ h2 {
   }
 }
 /*---tablet---*/
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   #titulo__principal {
     display: none;
   }
@@ -316,6 +326,9 @@ h2 {
     flex-direction: column;
     background-color: rgb(241, 217, 61);
     margin: 0;
+  }
+  #mobile {
+    font-size: 1rem;
   }
   .descripcion {
     font-size: 1rem;
